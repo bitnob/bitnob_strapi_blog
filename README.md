@@ -22,10 +22,9 @@ npm run start
 yarn start
 ```
 
-### `develop`
+### `Custom Routes`
 
 ```
-Custom Routes
 Base URL - http://localhost:1337/api
 
 GET Requests
