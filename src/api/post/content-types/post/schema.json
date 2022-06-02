@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "feature_image": {
+      "type": "string"
+    },
+    "primary_author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::primary-author.primary-author",
+      "inversedBy": "author_name"
+    },
+    "primary_tag": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::primary-tag.primary-tag",
+      "inversedBy": "post_slug"
+    }
+  }
+}

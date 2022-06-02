@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "primary_tags",
+  "info": {
+    "singularName": "primary-tag",
+    "pluralName": "primary-tags",
+    "displayName": "primary_tag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "url": {
+      "type": "string"
+    },
+    "visibility": {
+      "type": "string"
+    },
+    "feature_image": {
+      "type": "boolean"
+    },
+    "post_slug": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "primary_tag"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "primary_authors",
+  "info": {
+    "singularName": "primary-author",
+    "pluralName": "primary-authors",
+    "displayName": "primary_author",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "profile_image": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "author_name": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "primary_author"
+    }
+  }
+}
