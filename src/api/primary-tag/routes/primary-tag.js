@@ -18,14 +18,6 @@ module.exports = {
         auth: false,
       },
     },
-    {
-      method: 'GET',
-      path: '/primary-tags/:slug',
-      handler: 'primary-tag.find',
-      config: {
-        auth: false,
-      },
-    }
   ]
 }
 
