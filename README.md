@@ -28,7 +28,7 @@ yarn start
 Custom Routes
 Base URL - http://localhost:1337/api
 
-- GET Requests
+GET Requests
 - To get a single post => /posts/:slug
 - To get a single primary_tag => /primary-tags/:slug
 - To get a single primary_author => /primary-authors/:slug
