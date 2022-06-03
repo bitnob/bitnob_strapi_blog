@@ -2,6 +2,25 @@
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
+### `Note`
+
+```
+Ensure you check the .env.example file before running the following commands.
+This will ensure that you have the correct environment variables set.
+```
+
+### `Custom Routes`
+
+```
+Base URL - http://localhost:1337/api
+
+GET Requests
+- To get a single post => /posts/:slug
+- To get a single primary_tag => /primary-tags/:slug
+- To get a single primary_author => /primary-authors/:slug
+
+```
+
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
@@ -20,18 +39,6 @@ Start your Strapi application with autoReload disabled. [Learn more](https://doc
 npm run start
 # or
 yarn start
-```
-
-### `Custom Routes`
-
-```
-Base URL - http://localhost:1337/api
-
-GET Requests
-- To get a single post => /posts/:slug
-- To get a single primary_tag => /primary-tags/:slug
-- To get a single primary_author => /primary-authors/:slug
-
 ```
 
 ### `build`
