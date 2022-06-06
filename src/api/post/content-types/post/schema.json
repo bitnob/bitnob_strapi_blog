@@ -41,6 +41,9 @@
       "relation": "manyToOne",
       "target": "api::primary-tag.primary-tag",
       "inversedBy": "post_slug"
+    },
+    "published_timestamp": {
+      "type": "string"
     }
   }
 }
