@@ -8,5 +8,13 @@ module.exports = {
         auth: false,
       },
     },
+    {
+      method: 'GET',
+      path: '/posts',
+      handler: 'post.findMany',
+      config: {
+        auth: false,
+      },
+    },
   ]
 }

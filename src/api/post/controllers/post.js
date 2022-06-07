@@ -27,6 +27,19 @@ module.exports = createCoreController("api::post.post", ({ strapi }) => ({
     // return this.transformResponse(sanitizedEntity);
     return this.transformResponse(entity);
   },
+
+  async findMany(ctx) {
+    const entity = await strapi.db.query("api::post.post").findMany({
+      populate: { primary_tag: true, primary_author: true },
+    });
+
+    // console.log(entity);
+    // const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
+    // console.log(sanitizedEntity);
+
+    // return this.transformResponse(sanitizedEntity);
+    return this.transformResponse(entity);
+  },
 }));
 
 // module.exports = createCoreController('api::post.post', ({ strapi }) =>  ({
