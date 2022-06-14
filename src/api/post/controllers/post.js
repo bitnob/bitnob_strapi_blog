@@ -10,6 +10,7 @@
 // path: ./src/api/post/controllers/post.js
 
 const { createCoreController } = require("@strapi/strapi").factories;
+const { marked } = require('marked');
 
 module.exports = createCoreController("api::post.post", ({ strapi }) => ({
   async findOne(ctx) {
@@ -25,7 +26,8 @@ module.exports = createCoreController("api::post.post", ({ strapi }) => ({
     // console.log(sanitizedEntity);
 
     // return this.transformResponse(sanitizedEntity);
-    return this.transformResponse(entity);
+    ;
+   return this.transformResponse(entity);
   },
 
   async findMany(ctx) {
@@ -47,6 +49,7 @@ module.exports = createCoreController("api::post.post", ({ strapi }) => ({
     return this.transformResponse(entity);
   },
 }));
+
 
 // module.exports = createCoreController('api::post.post', ({ strapi }) =>  ({
 //   async findOne(ctx) {

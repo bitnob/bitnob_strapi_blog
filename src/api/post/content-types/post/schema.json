@@ -44,6 +44,9 @@
     },
     "published_timestamp": {
       "type": "string"
+    },
+    "htmls": {
+      "type": "richtext"
     }
   }
 }
