@@ -4,5 +4,10 @@ module.exports = {
     enabled: true,
     resolve: './src/plugins/wysiwyg'
   },
+  'seo': {
+    enabled: true,
+    // resolve: "./src/plugins/seo",
+  },
   // ...
 }
+
