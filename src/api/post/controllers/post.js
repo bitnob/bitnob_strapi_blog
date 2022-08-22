@@ -31,7 +31,8 @@ module.exports = createCoreController("api::post.post", ({ strapi }) => ({
   async findMany(ctx) {
     const entity = await strapi.db.query("api::post.post").findMany({
       populate: { primary_tag: true, primary_author: true },
-      orderBy: [{ published_timestamp: "desc" }, { createdAt: "desc" }],
+      orderBy: [{ published_timestamp: "desc" }, { publishedAt: "desc" }],
+      // orderBy: [{ published_timestamp: "desc" }, { createdAt: "desc" }],
       filters: {
         publishedAt: {
           $notContainsi: null,
