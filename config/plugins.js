@@ -100,39 +100,6 @@ module.exports = () => {
             columns: 5,
             documentColors: 10,
           },
-
-          image: {
-            resizeUnit: "%",
-            resizeOptions: [ {
-              name: 'resizeImage:original',
-              value: null,
-              icon: 'original'
-            },
-            {
-              name: 'resizeImage:25',
-              value: '25',
-              icon: 'small'
-            },
-            {
-              name: 'resizeImage:50',
-              value: '50',
-              icon: 'medium'
-            },
-            {
-              name: 'resizeImage:75',
-              value: '75',
-              icon: 'large'
-            } ],
-            toolbar: [
-              'toggleImageCaption',
-              'imageTextAlternative',
-              'imageStyle:inline',
-              'imageStyle:block',
-              'imageStyle:side',
-              'linkImage',
-              'resizeImage:25', 'resizeImage:50', 'resizeImage:75', 'resizeImage:original'
-            ]
-          },
          
           table: {
             contentToolbar: [
@@ -158,7 +125,7 @@ module.exports = () => {
                 {
                   name: 'img',
                   attributes: {
-                      sizes:true,
+                      sizes:false,
                       loading:true,
                   }
                 },
