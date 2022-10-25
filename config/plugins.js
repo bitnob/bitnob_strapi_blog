@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+module.exports = {
+  // ...
+  'wysiwyg': {
+    enabled: true,
+    resolve: './src/plugins/wysiwyg'
+  },
+  'seo': {
+    enabled: true,
+    // resolve: "./src/plugins/seo",
+  },
+  // ...
+}
+=======
 module.exports = () => {
   return {
 
@@ -169,3 +183,4 @@ module.exports = () => {
     }
   }
 }
+>>>>>>> fabdf42 (Revert "Ft new prod")
