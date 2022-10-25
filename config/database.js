@@ -12,7 +12,14 @@ module.exports = ({ env }) => ({
       charset: 'utf8mb4'
       
     },
-    useNullAsDefault: true,
     debug: false,
+    pool: {
+      min: 0,
+      max: 10,
+      idleTimeoutMillis: 30000000,
+      createTimeoutMillis: 30000000,
+      acquireTimeoutMillis: 30000000,
+      propagateCreateError: false,
+    },
   },
 });
